@@ -1,18 +1,18 @@
-.main {}
-
 .hrnet-title {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.link-page-employees {}
-
-.create-employee {}
+.address-title {
+    font-weight: normal;
+    margin-top: 0;
+    text-align: left;
+}
