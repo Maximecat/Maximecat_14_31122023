@@ -1,20 +1,20 @@
-import './index.css';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './pages/Home/App';
-import Employees from './pages/Employees/Employees';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import CreateEmployee from './pages/CreateEmployee/CreateEmployee';
+import EmployeeList from './pages/EmployeeList/EmployeeList';
+import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <CreateEmployee />
   },
   {
     path: "/employees",
-    element: <Employees />
+    element: <EmployeeList />
   }
 ])
 root.render(
