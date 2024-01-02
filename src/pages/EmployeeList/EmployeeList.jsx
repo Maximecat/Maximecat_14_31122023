@@ -64,6 +64,7 @@ function EmployeeList() {
                 checkboxSelection
                 disableRowSelectionOnClick
             />
+            <a href="/">Home</a>
         </div>
     );
 }
