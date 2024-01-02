@@ -26,8 +26,8 @@ function DropdownState() {
                 <InputLabel id="select-label">State</InputLabel>
                 <Select labelId="select-label" id="select" value={states.value} label="State" onChange={handleChange}>
                     {
-                        states.map((state) =>
-                            <MenuItem>{state.name}</MenuItem>
+                        states.map((state, item) =>
+                            <MenuItem key={item}>{state.name}</MenuItem>
                         )
                     }
                 </Select>
