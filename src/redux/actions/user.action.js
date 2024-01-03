@@ -1,8 +1,20 @@
-import { createAsyncThunk } from "@reduxjs/toolkit"
+import { createAction, createAsyncThunk } from "@reduxjs/toolkit"
 
 
 const saveAction = createAsyncThunk(
     'user/save',
+    async (user, thunkApi) => {
+        return user
+    }
 )
 
-export { saveAction }
+const handleModal = createAction(
+    'modal/handle',
+    (open) => {
+        return {
+            payload: open
+        }
+    }
+)
+
+export { saveAction, handleModal }
