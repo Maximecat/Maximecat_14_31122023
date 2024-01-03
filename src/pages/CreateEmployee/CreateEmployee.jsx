@@ -12,6 +12,8 @@ function CreateEmployee() {
 
   const [firstname, setFirstname] = useState("")
   const [lastname, setLastname] = useState("")
+  // const [birthDate, setBirthDate] = useState("")
+  // const [startDate, setStartDate] = useState("")
   const [street, setStreet] = useState("")
   const [city, setCity] = useState("")
   const [zipcode, setZipCode] = useState("")
@@ -35,8 +37,20 @@ function CreateEmployee() {
         <TextField id="lastname" label="Last Name" type='text' value={lastname} variant="outlined" onChange={(e) => setLastname(e.target.value)} />
 
         <LocalizationProvider dateAdapter={AdapterDayjs}>
-          <DateField label="Date of Birth" slotProps={{ textField: { helperText: 'MM/DD/YYYY' } }} style={{ marginTop: "15px", marginBottom: "5px" }} />
-          <DatePicker label="Start Date" slotProps={{ textField: { helperText: 'MM/DD/YYYY' } }} sx={{ width: 223 }} />
+          <DateField
+            label="Date of Birth"
+            // value={birthDate}
+            slotProps={{ textField: { helperText: 'MM/DD/YYYY' } }}
+            style={{ marginTop: "15px", marginBottom: "5px" }}
+          // onChange={(e) => setBirthDate(e.target.value)}
+          />
+          <DatePicker
+            label="Start Date"
+            // value={startDate}
+            slotProps={{ textField: { helperText: 'MM/DD/YYYY' } }}
+            sx={{ width: 223 }}
+          // onChange={(e) => setStartDate(e.target.value)}
+          />
         </LocalizationProvider>
 
         <Box style={{ border: "2px solid black", borderRadius: "5px", marginTop: "10px", padding: "15px", display: "flex", flexDirection: "column" }} >
