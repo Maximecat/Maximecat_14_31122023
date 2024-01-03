@@ -15,7 +15,6 @@ function DropdownDepartment() {
             <FormControl fullWidth style={{ marginTop: "15px" }}>
                 <InputLabel id="select-label">Department</InputLabel>
                 <Select labelId="select-label" id="select" label="Department" value={department} onChange={handleChange}>
-                    {/* onChange={handleChange} sur le select au dessus */}
                     <MenuItem>Sales</MenuItem>
                     <MenuItem>Marketing</MenuItem>
                     <MenuItem>Engineering</MenuItem>
