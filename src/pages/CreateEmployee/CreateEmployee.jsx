@@ -9,18 +9,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { handleModal, saveAction } from '../../redux/actions/user.action';
 import { Link } from 'react-router-dom';
 
-// const style = {
-//   position: 'absolute',
-//   top: '50%',
-//   left: '50%',
-//   transform: 'translate(-50%, -50%)',
-//   width: 400,
-//   bgcolor: 'background.paper',
-//   border: '2px solid #000',
-//   boxShadow: 24,
-//   p: 4,
-// };
-
 function CreateEmployee() {
   const dispatch = useDispatch()
 
@@ -135,7 +123,7 @@ function CreateEmployee() {
         aria-describedby="modal-modal-description"
         onClose={handleClose}
       >
-        <Box> {/*sx={style}*/}
+        <Box>
           <Typography id="modal-modal-title" variant="h6" component="h2">
             Employee Created !
           </Typography>
