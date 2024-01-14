@@ -8,3 +8,7 @@ body,
   display: flex;
   flex-direction: column;
 }
+
+.MuiFormLabel-root {
+  z-index: -1 !important;
+}
