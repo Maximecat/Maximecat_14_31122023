@@ -22,5 +22,5 @@ Redux
 
 ### Plugin converti (modale)
 
-[Package npm]()
+[Package npm](https://www.npmjs.com/package/maxime-cat-modal)
 [GitHub repository](https://github.com/Maximecat/Maximecat_14_31122023)
