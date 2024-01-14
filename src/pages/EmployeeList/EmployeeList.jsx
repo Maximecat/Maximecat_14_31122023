@@ -23,7 +23,7 @@ function EmployeeList() {
         {
             field: 'startDate',
             headerName: 'Start Date',
-            type: 'string',
+            type: 'Date',
             width: 120,
             valueGetter: (params) => dayjs(params.row.startDate).format('MM/DD/YYYY')
         },
@@ -36,7 +36,7 @@ function EmployeeList() {
         {
             field: 'birthDate',
             headerName: 'Date of Birth',
-            type: 'string',
+            type: 'Date',
             width: 120,
             valueGetter: (params) => dayjs(params.row.birthDate).format('MM/DD/YYYY')
         },
