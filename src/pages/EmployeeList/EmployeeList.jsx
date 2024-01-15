@@ -71,12 +71,6 @@ function EmployeeList() {
     return (
         <div className="main-container">
             <h1 className='current-employees'>Current Employees</h1>
-            <Autocomplete freeSolo id="auto-complete-search" disableClearable
-                options={rows.filter((option) => option)}
-                renderInput={(params) => (
-                    <TextField {...params} label="Search input" InputProps={{ ...params.InputProps, type: 'search', }} sx={{ width: 180, marginBottom: 2 }} />
-                )}
-            />
             <DataGrid
                 getRowId={(row) => row.id}
                 rows={rows}
