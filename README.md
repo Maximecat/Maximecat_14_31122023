@@ -24,3 +24,4 @@ Redux
 
 [Package npm](https://www.npmjs.com/package/maxime-cat-modal)
 [GitHub repository](https://github.com/Maximecat/Maximecat_14_31122023)
+[GitHub repository MaximeCatModal](https://github.com/Maximecat/MaximeCatModal)
