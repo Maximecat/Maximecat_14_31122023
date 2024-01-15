@@ -3,7 +3,6 @@ import './EmployeeList.css';
 import { useSelector } from 'react-redux';
 import dayjs from 'dayjs';
 import { Link } from 'react-router-dom';
-import { Autocomplete, TextField } from '@mui/material';
 
 function EmployeeList() {
 
