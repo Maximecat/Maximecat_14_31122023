@@ -1,4 +1,4 @@
-import { DataGrid } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import './EmployeeList.css';
 import { useSelector } from 'react-redux';
 import dayjs from 'dayjs';
@@ -75,10 +75,22 @@ function EmployeeList() {
                 rows={rows}
                 columns={columns}
                 initialState={{
+                    filter: {
+                        filterModel: {
+                            items: [],
+                            quickFilterValues: [],
+                        },
+                    },
                     pagination: {
                         paginationModel: {
                             pageSize: 10 || 25 || 50 || 100
                         },
+                    },
+                }}
+                slots={{ toolbar: GridToolbar }}
+                slotProps={{
+                    toolbar: {
+                        showQuickFilter: true,
                     },
                 }}
                 pageSizeOptions={[10, 25, 50, 100]}
